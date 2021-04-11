@@ -1,0 +1,84 @@
+.header {
+    background-color: $black-color;
+
+    &__navigation {
+        display: none;
+        height: 764px;
+        width: 232px;
+        border-radius: 0px;
+        background: #FFFFFF;
+        position: absolute;
+        right: 0px;
+        box-shadow: 0 0 12px 2px;
+    }
+
+    &__navigation__button {
+        background: transparent;
+        border: none;
+        position: absolute;
+        right: 0;
+        margin: 12px 12px 0 0;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 37px 0 24px 34px;
+    }
+
+    &__navigation-list {
+        margin: 0 0 24px 34px;
+    }
+
+    &__navigation-item {
+        margin: 20px 0 0 0;
+    }
+
+    &__sub-title {
+        font-style: normal;
+        font-weight: 400;
+        color: var(--dark-pink-color);
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    &__sub-navigation-list {
+        margin: 12px 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__sub-navigation-link {
+        margin-left: 21px;
+        margin-bottom: 11px;
+        text-decoration: none;
+        display: flex;
+        color: #6F6E6E;
+        font-weight: 400;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        min-height: 75px;
+        align-items: center;
+    }
+
+    &__logo {
+        margin: 0 41px 0 0;
+    }
+
+    &__button {
+        background: transparent;
+        border: none;
+        margin: 0 33px 0 0;
+        position: relative;
+    }
+
+    &__person {
+        margin: 0 33px 0 0;
+    }
+
+}

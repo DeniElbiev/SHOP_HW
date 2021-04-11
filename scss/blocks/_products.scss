@@ -1,0 +1,121 @@
+.products {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__title {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 36px;
+        padding-bottom: 6px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 360px;
+        margin: 0 0 30px;
+    }
+
+    &__text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        color: $light-grey-color;
+        margin-bottom: 48px;
+    }
+}
+
+.product {
+
+    &:hover &__overlay:before,
+    &:hover &__button,
+    &:hover &__button-img {
+        display: block;
+    }
+
+    &__img {
+        display: block;
+    }
+
+    &__description {
+        background: $grey-color;
+        padding: 25px 29px 20px 17px;
+    }
+
+    &__title {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+        margin-bottom: 13px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 17px;
+        margin-bottom: 18px;
+    }
+
+    &__price {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        color: $dark-pink-color;
+    }
+
+    &__button {
+        display: none;
+        position: absolute;
+        top: 200px;
+        left: 120px;
+        background: transparent;
+        border: 1px solid #FFFFFF;
+        font-weight: 400;
+        color: #FFFFFF;
+        padding: 14px 12px 14px 50px;
+    }
+
+    &__overlay {
+        position: relative;
+    }
+
+    &__overlay:before {
+        content: '';
+        position: absolute;
+        background: rgba(58, 56, 56, 0.86);
+        width: 360px;
+        height: 420px;
+        display: none;
+    }
+
+    &__button-img {
+        position: absolute;
+        display: none;
+        top: 50%;
+        left: 135px;
+    }
+
+    &__browse__button {
+        background: transparent;
+        border: 1px solid #FF6A6A;
+        width: 211px;
+        height: 41px;
+        margin: 48px 0 95px 0;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        color: #F26376;
+
+        &:hover {
+            background-color: #FF6A6A;
+            color: #FFFFFF;
+        }
+    }
+}

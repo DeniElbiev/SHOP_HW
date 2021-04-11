@@ -1,0 +1,108 @@
+.registration {
+
+    &__banner {
+        display: flex;
+        background: $light-pink-color;
+        height: 148px;
+        align-items: center;
+    }
+
+    &__banner_text {
+        text-transform: uppercase;
+        color: $dark-pink-color;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        margin: 64px 0 0 0;
+    }
+
+    &__form__area {
+        width: 360px;
+        height: 45px;
+        margin-top: 21px;
+        border: 1px solid #A4A4A4
+    }
+
+    &__form__male {
+        margin: 31px 0 33px 0;
+    }
+
+    &__form__male_tape {
+        border: 1px solid #A4A4A4;
+        margin-right: 10px;
+    }
+
+    &__form__male_text {
+        margin-right: 20px;
+    }
+
+    &__form_text {
+        margin: 15px 0 0 0;
+        width: 359px;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 16px;
+        color: #B1B1B1;
+    }
+
+    &__form__button {
+        background: transparent;
+        border: 1px solid #FF6A6A;
+        width: 167px;
+        height: 50px;
+        margin: 39px 0 96px 0;
+        padding: 16px 66px 17px 29px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        color: #F26376;
+        position: relative;
+
+        &:hover {
+            background-color: #FF6A6A;
+            color: #FFFFFF;
+        }
+
+        &:hover .registration__form__button_img {
+            fill: white;
+        }
+    }
+
+    &__form__button_img {
+        position: absolute;
+        right: 29px;
+        top: 18px;
+        fill: #F26376;
+    }
+
+    &__box_info {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 29px;
+        margin: 0 0 0 128px;
+    }
+
+    &__info_text {
+        margin: 22px 0 21px 0;
+    }
+
+    &__info_item {
+        margin: 0 0 16px 42px;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/registration-info-img.svg);
+            width: 20px;
+            height: 16px;
+            left: -41px;
+            top: 20%;
+        }
+    }
+}
