@@ -1,5 +1,6 @@
 .header {
     background-color: $black-color;
+    min-width: auto;
 
     &__navigation {
         display: none;
@@ -80,5 +81,28 @@
     &__person {
         margin: 0 33px 0 0;
     }
+}
 
+@media (max-width: $desktop-width) {
+    .header {
+        padding: 0 16px;
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .header {
+        padding: 0 16px;
+
+        &__person {
+            display: none;
+        }
+
+        &__shoppingbag {
+            display: none;
+        }
+
+        &__button {
+            margin: 0 0 0 0;
+        }
+    }
 }
