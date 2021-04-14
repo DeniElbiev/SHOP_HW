@@ -12,7 +12,12 @@
 
     @include mobile {
         min-height: 363px;
+
+        &__img {
+            display: none;
+        }
     }
+
 
     &__title-container {
         flex-grow: 1;
@@ -25,7 +30,11 @@
         }
 
         @include mobile {
-            padding: 0 0 0 83px;
+            padding: 0 25% 0 25%;
+        }
+
+        @include min-mobile {
+            padding: 0 0 0 81px;
         }
     }
 
@@ -38,7 +47,11 @@
         }
 
         @include mobile {
-            @include font(38px, 46px, normal)
+            @include font(33px, 46px)
+        }
+
+        @include min-mobile {
+            @include font(38px, 46px)
         }
     }
 
@@ -51,6 +64,10 @@
         }
 
         @include mobile {
+            @include font(20px, 24px, normal)
+        }
+
+        @include min-mobile {
             @include font(20px, 24px, normal)
         }
     }
