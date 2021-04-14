@@ -17,13 +17,35 @@
         display: flex;
         justify-content: space-between;
         margin: 64px 0 0 0;
+
+        @include tablet {
+            margin: 40px 0 0 0;
+        }
+
+        @include mobile {
+            display: block;
+        }
+
+        @include min-mobile {
+            display: block;
+        }
     }
 
     &__form__area {
         width: 360px;
         height: 45px;
         margin-top: 21px;
-        border: 1px solid #A4A4A4
+        border: 1px solid #A4A4A4;
+
+        @include mobile {
+            width: 358px;
+            height: 44px;
+        }
+
+        @include min-mobile {
+            width: 358px;
+            height: 44px;
+        }
     }
 
     &__form__male {
@@ -77,6 +99,27 @@
     &__box_info {
         @include font(24px, 29px, 300);
         margin: 0 0 0 128px;
+
+        @include tablet {
+            @include font(16px, 19px, 300);
+            margin: 0 0 0 22px;
+        }
+
+        @include mobile {
+            margin: 0 0 96px 0;
+        }
+
+        @include min-mobile {
+            margin: 0 0 96px 0;
+        }
+    }
+
+    &__info_title {
+        @include font(24px, 29px, 300);
+
+        @include tablet {
+            @include font(16px, 19px, 300);
+        }
     }
 
     &__info_text {
