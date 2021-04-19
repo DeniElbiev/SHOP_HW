@@ -1,0 +1,32 @@
+.pages {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 48px;
+    margin-bottom: 96px;
+
+    &__navigation {
+        border: 1px solid #EBEBEB;
+        width: 284px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        margin: 0 15px 0 15px;
+        @include font(16px, 19px, 300);
+    }
+
+    &-link {
+        list-style: none;
+        text-decoration: none;
+        color: #C4C4C4;
+    }
+}

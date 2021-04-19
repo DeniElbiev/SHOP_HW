@@ -5,12 +5,33 @@
         background: $light-pink-color;
         height: 148px;
         align-items: center;
+        justify-content: space-between;
     }
 
     &__banner_text {
         text-transform: uppercase;
         color: $dark-pink-color;
-        @include font(24px, 29px);
+        @include font(24px, 29px, );
+    }
+
+    &__banner_list {
+        display: flex;
+        text-transform: uppercase;
+    }
+
+    &__banner_text-item {
+        margin: 0 5px 0 5px;
+    }
+
+    &__banner_text-item-link {
+        text-decoration: none;
+        color: #636363;
+        @include font(14px, 17px, 300);
+
+        &:hover {
+            color: $dark-pink-color;
+            @include font(14px, 17px, 700);
+        }
     }
 
     &__box {
@@ -38,20 +59,12 @@
         border: 1px solid #A4A4A4;
 
         @include mobile {
-<<<<<<< HEAD
             width: 358px;
-=======
-            width: 357px;
->>>>>>> lesson-6
             height: 44px;
         }
 
         @include min-mobile {
-<<<<<<< HEAD
             width: 358px;
-=======
-            width: 357px;
->>>>>>> lesson-6
             height: 44px;
         }
     }

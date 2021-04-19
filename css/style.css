@@ -186,7 +186,8 @@ body {
 }
 
 .header__button:hover + .header__navigation_box,
-.header__button:focus + .header__navigation_box {
+.header__button:focus + .header__navigation_box,
+.header__button:active + .header__navigation_box {
   display: block;
 }
 
@@ -199,12 +200,20 @@ body {
   width: 232px;
 }
 
+.header__navigation_box:hover {
+  display: block;
+}
+
 .header__navigation {
   border-radius: 0px;
   background: #FFFFFF;
   box-shadow: 0 0 12px 2px;
   height: 764px;
   width: 232px;
+}
+
+.header__navigation:hover {
+  display: block;
 }
 
 .header__navigation__button {
@@ -886,6 +895,7 @@ body {
   background: #F8F3F4;
   height: 148px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .registration__banner_text {
@@ -894,6 +904,30 @@ body {
   font-size: 24px;
   line-height: 29px;
   font-weight: 400;
+}
+
+.registration__banner_list {
+  display: flex;
+  text-transform: uppercase;
+}
+
+.registration__banner_text-item {
+  margin: 0 5px 0 5px;
+}
+
+.registration__banner_text-item-link {
+  text-decoration: none;
+  color: #636363;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+}
+
+.registration__banner_text-item-link:hover {
+  color: #F16D7F;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
 }
 
 .registration__box {
@@ -1052,5 +1086,155 @@ body {
   height: 16px;
   left: -41px;
   top: 20%;
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 48px;
+  margin-bottom: 96px;
+}
+
+.pages__navigation {
+  border: 1px solid #EBEBEB;
+  width: 284px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pages__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pages__item {
+  margin: 0 15px 0 15px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 300;
+}
+
+.pages-link {
+  list-style: none;
+  text-decoration: none;
+  color: #C4C4C4;
+}
+
+.catalog__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 51px 0 65px 0;
+}
+
+.catalog__filter {
+  margin-right: 330px;
+  position: relative;
+}
+
+.catalog__filter_title {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+}
+
+.catalog__filter_title:hover {
+  color: #EF5B70;
+}
+
+.catalog__filter_title:hover + .catalog__filter_navigation_box,
+.catalog__filter_title:focus + .catalog__filter_navigation_box,
+.catalog__filter_title:active + .catalog__filter_navigation_box {
+  display: block;
+}
+
+.catalog__filter_navigation_box {
+  height: auto;
+  width: 360px;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  top: 0%;
+}
+
+.catalog__filter_navigation_box:hover {
+  display: block;
+}
+
+.catalog__filter_navigation {
+  margin: 16px 16px 16px 16px;
+}
+
+.catalog__filter_navigation_sub-title {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  color: #EF5B70;
+  margin-bottom: 16px;
+}
+
+.catalog__filter_navigation-title {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  width: 327px;
+  height: 37px;
+  border: 2px solid #EBEBEB;
+  margin-bottom: 18px;
+  background: transparent;
+  padding: 0;
+}
+
+.catalog__filter_navigation-title:hover + .catalog__filter_navigation-list,
+.catalog__filter_navigation-title:focus + .catalog__filter_navigation-list,
+.catalog__filter_navigation-title:active + .catalog__filter_navigation-list {
+  display: block;
+}
+
+.catalog__filter_navigation-list {
+  display: none;
+  margin-bottom: 24px;
+}
+
+.catalog__filter_navigation-list:hover {
+  display: block;
+}
+
+.catalog__navigation-link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  color: #6F6E6E;
+}
+
+.catalog__filter_navigation-item {
+  margin-bottom: 11px;
+}
+
+.catalog__categories {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  flex-grow: 1;
+  color: #6F6E6E;
+}
+
+.catalog__categories_list {
+  display: flex;
+}
+
+.catalog__categories_item {
+  margin-right: 48px;
 }
 /*# sourceMappingURL=style.css.map */

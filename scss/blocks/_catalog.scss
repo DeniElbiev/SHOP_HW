@@ -1,0 +1,107 @@
+.catalog {
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 51px 0 65px 0;
+    }
+
+    &__filter {
+        margin-right: 330px;
+        position: relative;
+    }
+
+    &__filter_title {
+        text-transform: uppercase;
+        @include font(14px, 17px, 600);
+
+        &:hover {
+            color: #EF5B70;
+        }
+
+        &:hover+.catalog__filter_navigation_box,
+        &:focus+.catalog__filter_navigation_box,
+        &:active+.catalog__filter_navigation_box {
+            display: block;
+        }
+    }
+
+    &__filter_navigation_box {
+        height: auto;
+        width: 360px;
+        display: none;
+        position: absolute;
+        z-index: 1;
+        background-color: white;
+        top: 0%;
+
+        &:hover {
+            display: block;
+        }
+    }
+
+    &__filter_navigation {
+        margin: 16px 16px 16px 16px;
+    }
+
+    &__filter_navigation_sub-title {
+        text-transform: uppercase;
+        @include font(14px, 17px, 600);
+        color: #EF5B70;
+        margin-bottom: 16px;
+    }
+
+    &__filter_navigation-title {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        @include font(14px, 17px);
+        width: 327px;
+        height: 37px;
+        border: 2px solid #EBEBEB;
+        margin-bottom: 18px;
+        background: transparent;
+        padding: 0;
+
+        &:hover+.catalog__filter_navigation-list,
+        &:focus+.catalog__filter_navigation-list,
+        &:active+.catalog__filter_navigation-list {
+            display: block;
+        }
+    }
+
+    &__filter_navigation-list {
+        display: none;
+        margin-bottom: 24px;
+
+        &:hover {
+            display: block;
+        }
+    }
+
+    &__navigation-link {
+        text-decoration: none;
+        @include font(14px, 17px);
+        color: #6F6E6E;
+    }
+
+    &__filter_navigation-item {
+        margin-bottom: 11px;
+    }
+
+    &__categories {
+        text-transform: uppercase;
+        @include font(14px, 17px);
+        flex-grow: 1;
+        color: #6F6E6E;
+    }
+
+    &__categories_list {
+        display: flex;
+    }
+
+    &__categories_item {
+        margin-right: 48px;
+    }
+}

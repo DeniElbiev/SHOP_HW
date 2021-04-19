@@ -20,7 +20,8 @@
         position: relative;
 
         &:hover+.header__navigation_box,
-        &:focus+.header__navigation_box {
+        &:focus+.header__navigation_box,
+        &:active+.header__navigation_box {
             display: block;
         }
     }
@@ -32,6 +33,10 @@
         top: 75px;
         height: 764px;
         width: 232px;
+
+        &:hover {
+            display: block;
+        }
     }
 
     &__navigation {
@@ -40,6 +45,10 @@
         box-shadow: 0 0 12px 2px;
         height: 764px;
         width: 232px;
+
+        &:hover {
+            display: block;
+        }
     }
 
     &__navigation__button {
